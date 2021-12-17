@@ -59,8 +59,8 @@ public class ComposeActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
 
-                String count= String.valueOf(s.toString().length());
-                String countText=count+"/280";
+                String count= String.valueOf(280-s.toString().length());
+                String countText=count+"/280 left";
                 tvCount.setText(countText);
 
             }
